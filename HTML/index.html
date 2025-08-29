@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+        td{
+            background-color: rgb(80, 91, 255);
+        }
+        th,td{
+            background: 1px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            border-style: dotted;
+            padding: 30px;
+            border-spacing: 30px;
+        }
+        td:nth-child(even) {
+            background-color: rgb(156, 113, 255);
+        }
+        tr:nth-child(odd) {
+            background-color: rgb(1, 172, 15);
+        }
+        td:hover{
+            background-color: chocolate;
+        }
+        th,td{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <table style="width: 250px;">
+        <caption>Student Details</caption>
+        <tr>
+            <th colspan="2">Name </th>
+            <th>Roll No.</th>
+
+        </tr>
+        <tr>
+            <td>Atharv</td>
+            <td>Nigam</td>
+            <td>125</td>
+        </tr>
+         <tr>
+            <td>Ayush</td>
+            <td>Raj</td>
+            <td>126</td>
+        </tr>
+    </table>
     
 </body>
 </html>
